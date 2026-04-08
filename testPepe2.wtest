@@ -3,17 +3,16 @@ import bonos.*
 import categorias.*
 
 describe "sueldo pepe" {
-	test "Test inicial 1" {
+	test "Test inicial 2" {
 		/* esta parte está comentada porque falta agregar los métodos
 		 * correspondientes en el objeto pepe. 
 		 * Descomentar las cuatro líneas que siguen para que el test funcione correctamente. 
 		 */
-		pepe.cambioDeCategoria(cadete)
-		pepe.cambioDeBonoPorResultado(bonoMontoFijo)
-		pepe.cambioDeBonoPorPresentismo(bonoPresentismoNormal)
-		pepe.cambiarFaltas(3)
+		pepe.cambioDeCategoria(gerente)
+		pepe.cambioDeBonoPorResultado(bonoPorcentaje)
+		pepe.cambioDeBonoPorPresentismo(bonoNulo)
 		
-		assert.equals(20000 + 800 + 0, pepe.sueldo())
+		assert.equals(16500, pepe.sueldo())
 	}
 
 	

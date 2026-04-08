@@ -1,0 +1,23 @@
+import pepe.*
+import roque.*
+import ernesto.*
+import bonos.*
+import categorias.*
+
+describe "sueldo pepe" {
+  test "Test inicial 3" {
+
+        medioTiempo.categoriaBase(cadete)
+        pepe.cambioDeCategoria(medioTiempo)
+        pepe.cambioDeBonoPorPresentismo(bonoPresentismoDemagogico)
+        pepe.cambioDeBonoPorResultado(bonoPorcentaje)
+        pepe.cambiarFaltas(1)
+        roque.cambioDeBonoPorResultado(bonoMontoFijo)
+        ernesto.asignarCompañero(pepe)
+        ernesto.cambioDeBonoPorPresentismo(bonoPresentismoAjuste)
+
+        assert.equals(11500, pepe.sueldo())
+        assert.equals(37800, roque.sueldo())
+        assert.equals(10100, ernesto.sueldo())
+  }
+}
